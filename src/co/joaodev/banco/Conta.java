@@ -5,6 +5,7 @@ public class Conta {
     private String agencia;
     private String conta;
     private String nome;
+    private double balanco;
 
     private static final int MAX_LENGTH = 12;
 
@@ -21,5 +22,13 @@ public class Conta {
             this.nome = nome;
         }
         System.out.println(this.nome);
+    }
+
+    public boolean Sacar(double valor){
+        if (balanco < valor){
+            return false;
+        }
+        balanco -= valor;
+        return true;
     }
 }
