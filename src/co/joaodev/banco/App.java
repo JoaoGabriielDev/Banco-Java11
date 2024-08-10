@@ -13,5 +13,23 @@ public class App {
             System.out.println("voce não tem saldo suficiente para sacar!");
         }
 
+        c1.Depositar(100);
+        c1.Depositar(50);
+        c1.Depositar(100);
+
+        if (!c1.Sacar(200)){
+            System.out.println("voce não tem saldo suficiente para sacar!");
+        } else {
+            System.out.println("Saque efetuado");
+        }
+
+        if (!c1.Sacar(200)){
+            System.out.println("voce não tem saldo suficiente para sacar!");
+        } else {
+            System.out.println("Saque efetuado!");
+        }
+
+
+
     }
 }

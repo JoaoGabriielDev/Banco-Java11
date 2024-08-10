@@ -31,4 +31,8 @@ public class Conta {
         balanco -= valor;
         return true;
     }
+
+    public void Depositar(double valor){
+        balanco += valor;
+    }
 }
